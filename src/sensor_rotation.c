@@ -110,9 +110,9 @@ static int sensor_rotation_handle_event(
     }
     break;
   default:
-    return ZMK_INPUT_PROC_CONTINUE; // Unsupported event type
+    break;
   }
-  return 0;
+  return ZMK_INPUT_PROC_CONTINUE;
 }
 
 // Initialize the processor
